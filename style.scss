@@ -373,6 +373,7 @@ $text-primary-color: #D99830;
         width: 600px;
         color: $primary-color;
         font-size: 21px;
+        text-align: center;
     }
 
     .skills {
@@ -456,9 +457,9 @@ $text-primary-color: #D99830;
         color: $primary-color;
     }
 
-    div {
-        display: none;
-    }
+    // div {
+    //     display: none;
+    // }
 
 
     .projectsBox {
@@ -467,7 +468,6 @@ $text-primary-color: #D99830;
         border: $amain solid 3px;
         border-radius: 55px;
         margin: 0 auto;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/rpgGame.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -482,7 +482,7 @@ $text-primary-color: #D99830;
             color: black;
         }
 
-        [title~="HTML5"] {
+        [title~="HTML"] {
             background-color: #E54C21;
             border: 3px solid #E54C21;
         }
@@ -492,7 +492,7 @@ $text-primary-color: #D99830;
             border: 3px solid #CE679A;
         }
         
-        [title~="JS"] {  
+        [title~="JavaScript"] {  
             background-color: #F7E018;
             border: 3px solid #F7E018;
         }
@@ -506,7 +506,12 @@ $text-primary-color: #D99830;
             background-color: #FFCB2C;
             border: 3px solid #FFCB2C;
         }
-        
+
+        [title~="node.js"] {  
+            background-color: #8BC500;
+            border: 3px solid #8BC500;
+        }
+
         .middleSection{
             height: 400px;
             padding: 40px 20px;
@@ -882,6 +887,33 @@ $text-primary-color: #D99830;
     -webkit-transform: translateZ(0) rotateY(0);
             transform: translateZ(0) rotateY(0);
 }
+}
+
+@media only  screen and (min-width: 2000px) {
+    #about{
+        .aboutMe {
+            width: 1000px;
+            
+            p{
+                font-size: 42px;
+            }
+        }
+
+        .skills {
+            width: 1000px;
+
+            .skillsIcons {
+                font-size: 42px;
+
+                article {
+                    svg {
+                        font-size: 100px;
+                    }
+
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1100px) {

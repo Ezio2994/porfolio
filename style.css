@@ -457,6 +457,7 @@
   width: 600px;
   color: #5680E9;
   font-size: 21px;
+  text-align: center;
 }
 
 #about .skills {
@@ -564,10 +565,6 @@
   color: #5680E9;
 }
 
-.projects div {
-  display: none;
-}
-
 .projects .projectsBox {
   width: 1000px;
   height: -webkit-fit-content;
@@ -576,8 +573,6 @@
   border: #fbb053 solid 3px;
   border-radius: 55px;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("./img/rpgGame.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/rpgGame.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -592,7 +587,7 @@
   color: black;
 }
 
-.projects .projectsBox [title~="HTML5"] {
+.projects .projectsBox [title~="HTML"] {
   background-color: #E54C21;
   border: 3px solid #E54C21;
 }
@@ -602,7 +597,7 @@
   border: 3px solid #CE679A;
 }
 
-.projects .projectsBox [title~="JS"] {
+.projects .projectsBox [title~="JavaScript"] {
   background-color: #F7E018;
   border: 3px solid #F7E018;
 }
@@ -615,6 +610,11 @@
 .projects .projectsBox [title~="Firebase"] {
   background-color: #FFCB2C;
   border: 3px solid #FFCB2C;
+}
+
+.projects .projectsBox [title~="node.js"] {
+  background-color: #8BC500;
+  border: 3px solid #8BC500;
 }
 
 .projects .projectsBox .middleSection {
@@ -1039,6 +1039,24 @@
   100% {
     -webkit-transform: translateZ(0) rotateY(0);
     transform: translateZ(0) rotateY(0);
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  #about .aboutMe {
+    width: 1000px;
+  }
+  #about .aboutMe p {
+    font-size: 42px;
+  }
+  #about .skills {
+    width: 1000px;
+  }
+  #about .skills .skillsIcons {
+    font-size: 42px;
+  }
+  #about .skills .skillsIcons article svg {
+    font-size: 100px;
   }
 }
 
