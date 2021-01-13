@@ -1,7 +1,7 @@
 const projects = [
     {
         name: "Happy",
-        urlImg: "./img/happy-app.jpg",
+        urlImg: "./img/happy-app.JPG",
         description: `A Mental Health App monitoring happiness levels over time, built for a client over 
         4 weeks in a team of 12. <br> My collaboration on the project consisted on building some components and 
         working features among them; writing code to get and store datas.`,
@@ -41,6 +41,7 @@ const projects = [
         tags: ["React", 'node.js', "Firebase", "Sass"],
         live: "https://the-videogame-api.intravaiaezio.co.uk/",
         gitHub: "https://github.com/Ezio2994/the-videogames-api-react",
+        addictionalGitHub: "https://github.com/Ezio2994/videogames-api-node.js"
     },
     {
         name: "Music Quiz",

@@ -565,6 +565,11 @@
   color: #5680E9;
 }
 
+.projects h3 {
+  font-size: 32px;
+  color: #5680E9;
+}
+
 .projects .projectsBox {
   width: 1000px;
   height: -webkit-fit-content;

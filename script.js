@@ -65,6 +65,9 @@ const projectsGenerator = () => {
                         class="fas fa-code"></i></a>
                 <a href="${projects[index].gitHub}" target='_blank'><i
                         class="fab fa-github-alt"></i></a>
+                        ${Object.keys(projects[index]).includes("addictionalGitHub") ?
+            `<a href="${projects[index].addictionalGitHub}" target='_blank'><i
+                        class="fab fa-github-alt"></i></a>` : ""}
             </article>
         `
     index < projects.length - 1 ? index++ : index = 0;
