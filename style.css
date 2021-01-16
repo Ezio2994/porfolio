@@ -1066,7 +1066,31 @@
   #about .skills .skillsIcons article svg {
     font-size: 100px;
   }
-  #about #contact .contactBG {
+  .projects h2 {
+    font-size: 52px;
+  }
+  .projects .projectsBox {
+    width: 60%;
+    height: 60vh;
+  }
+  .projects .projectsBox .middleSection {
+    height: 42vh;
+    margin: auto;
+  }
+  .projects .projectsBox .middleSection h2 {
+    font-size: 52px;
+  }
+  .projects .projectsBox .middleSection p {
+    font-size: 42px;
+    height: 25vh;
+  }
+  .projects .projectsBox .bottomSection {
+    width: 80%;
+    margin: 0 auto;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+  #contact .contactBG {
     min-height: 50vh;
   }
 }

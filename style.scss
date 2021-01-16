@@ -914,11 +914,43 @@ $text-primary-color: #D99830;
                 }
             }
         }
+    }
 
-        #contact {
-            .contactBG {
-                min-height: 50vh;
+        
+    .projects {
+        h2 {
+            font-size: 52px;
+        }
+
+        .projectsBox {
+            width: 60%;
+            height: 60vh;
+
+            .middleSection {
+                height: 42vh;
+                margin: auto;
+
+                h2 {
+                    font-size: 52px;
+                }
+
+                p {
+                font-size: 42px;
+                height: 25vh;
+                }
             }
+
+            .bottomSection {
+                width: 80%;
+                margin: 0 auto;
+                column-gap: 30px;
+            }
+        }
+    }
+
+    #contact {
+        .contactBG {
+            min-height: 50vh;
         }
     }
 }
