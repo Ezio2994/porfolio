@@ -133,7 +133,7 @@
 
 .wrap h1 {
   color: #fbb053;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .wrap h1 span {
@@ -549,8 +549,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -566,6 +567,7 @@
 }
 
 .projects h3 {
+  margin-top: 20px;
   font-size: 32px;
   color: #5680E9;
 }
@@ -844,6 +846,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 60vh;
 }
 
 #contact .contactBG .contactMe p {
@@ -1062,6 +1065,9 @@
   }
   #about .skills .skillsIcons article svg {
     font-size: 100px;
+  }
+  #about #contact .contactBG {
+    min-height: 50vh;
   }
 }
 
