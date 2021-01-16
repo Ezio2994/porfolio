@@ -21,7 +21,7 @@ html {
 #stars:after {
   content: "";
   position: absolute;
-  top: 3000px;
+  top: 2000px;
   width: 1px;
   height: 1px;
   background: transparent;
@@ -42,7 +42,7 @@ html {
 #stars2:after {
   content: " ";
   position: absolute;
-  top: 3000px;
+  top: 2000px;
   left: 20px;
   width: 2px;
   height: 2px;
@@ -64,7 +64,7 @@ html {
 #stars3:after {
   content: " ";
   position: absolute;
-  top: 3000px;
+  top: 2000px;
   width: 3px;
   height: 3px;
   background: transparent;
@@ -91,6 +91,12 @@ html {
   to {
     -webkit-transform: translateY(-2000px);
             transform: translateY(-2000px);
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+    #stars:after, #stars2:after, #stars3:after {
+      top: 3000px
   }
 }
 /*# sourceMappingURL=starsBackGround.css.map */
