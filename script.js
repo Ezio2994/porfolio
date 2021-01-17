@@ -82,6 +82,6 @@ bottomSection[0].onclick = (e) => {
     }
 }
 
-// startInt()
+startInt()
 projectsGenerator()
 
