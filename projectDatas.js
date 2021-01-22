@@ -43,6 +43,16 @@ const projects = [
         gitHub: "https://github.com/Ezio2994/the-videogames-api-react",
         addictionalGitHub: "https://github.com/Ezio2994/videogames-api-node.js"
     },
+
+    {
+        name: "Expenses Tracker",
+        urlImg: "./img/expenses-tracker.jpg",
+        description: `I built this web app with in mind to help users to save money, the user can input fixed and daily incomes/expenses which are summed with the amount desired to save every month and give the left over amount spendable. The user can also see how much has gained, spent and saved during the year from the report panel. <br> all data are stored on Cloud Firestore, and the graph is generated with Chart.js.`,
+        tags: ["HTML", "Sass", "JavaScript", "Firebase"],
+        live: "http://expenses-tracker.intravaiaezio.co.uk/",
+        gitHub: "https://github.com/Ezio2994/expenses-tracker",
+    },
+
     {
         name: "Music Quiz",
         urlImg: "./img/music-quiz.jpg",
@@ -75,14 +85,6 @@ const projects = [
         gitHub: "https://github.com/Ezio2994/Calculator",
     },
 
-    // {
-    //     name: "",
-    //     urlImg: "",
-    //     description: ``,
-    //     tags: [""],
-    //     live: "",
-    //     gitHub: "",
-    // }
 ]
 
 export default projects
