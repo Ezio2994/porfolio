@@ -524,6 +524,11 @@
   background-color: black;
 }
 
+#about .skills [title~="Angular"] {
+  font-size: 52px;
+  color: #dd0031;
+}
+
 #about .skills [title~="yarn"] {
   font-size: 52px;
   color: #248DBD;
@@ -622,6 +627,11 @@
 .projects .projectsBox [title~="node.js"] {
   background-color: #8BC500;
   border: 3px solid #8BC500;
+}
+
+.projects .projectsBox [title~="Angular"] {
+  background-color: #dd0031;
+  border: 3px solid #dd0031;
 }
 
 .projects .projectsBox .middleSection {

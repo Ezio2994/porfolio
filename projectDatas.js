@@ -52,7 +52,14 @@ const projects = [
         live: "http://expenses-tracker.intravaiaezio.co.uk/",
         gitHub: "https://github.com/Ezio2994/expenses-tracker",
     },
-
+    {
+        name: "Book Finder",
+        urlImg: "./img/book-BG.jpg",
+        description: `Angular application that use google books api in order to search for book withing google library. <br> This is the first application I've built on Angular in order to learn this framework better, I've got to use CRUD operations and auth with firebase.`,
+        tags: ["Angular", "Firebase", "Sass"],
+        live: "https://book-finder.intravaiaezio.co.uk/search",
+        gitHub: "https://github.com/Ezio2994/angular-book-finder",
+    },
     {
         name: "Music Quiz",
         urlImg: "./img/music-quiz.jpg",
@@ -73,18 +80,7 @@ const projects = [
         tags: ["HTML", "Sass", "JavaScript"],
         live: "https://hangman-game.intravaiaezio.co.uk/",
         gitHub: "https://github.com/Ezio2994/hangman-game",
-    },
-    {
-        name: "Calculator",
-        urlImg: "./img/calculator.jpg",
-        description: `My first optional project was to build something using my JavaScript fundamental
-        so I opted for a common first project which is to build a calculator. <br> It is fully functional
-        and can be used both with keyboard and mouse.`,
-        tags: ["HTML", "Sass", "JavaScript"],
-        live: "http://calculator.intravaiaezio.co.uk/",
-        gitHub: "https://github.com/Ezio2994/Calculator",
-    },
-
+    }
 ]
 
 export default projects

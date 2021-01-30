@@ -425,6 +425,11 @@ $text-primary-color: #D99830;
             background-color: black; 
         }
 
+        [title~="Angular"] {
+            font-size: 52px;
+            color: #dd0031;  
+        }
+
         [title~="yarn"] {
             font-size: 52px;
             color: #248DBD;   
@@ -510,6 +515,11 @@ $text-primary-color: #D99830;
         [title~="node.js"] {  
             background-color: #8BC500;
             border: 3px solid #8BC500;
+        }
+
+        [title~="Angular"] {  
+            background-color: #dd0031;
+            border: 3px solid #dd0031;
         }
 
         .middleSection{
