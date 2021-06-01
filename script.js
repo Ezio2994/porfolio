@@ -1,87 +1,91 @@
-import projects from "./projectDatas.js"
+import projects from "./projectDatas.js";
 
-const navUl = document.querySelector('nav ul')
-const projectBox = document.querySelector('.projectsBox')
-const projectsContainer = document.querySelector(".projectsBox div")
-const bottomSection = document.getElementsByClassName("bottomSection")
-const navbarButton = document.querySelector('#navBar')
-
-let index = 0
-let interval;
+const navbar = document.querySelector("nav");
+const navLinks = document.querySelectorAll("nav .links a");
+const navButton = document.querySelector("nav button");
+const projectsContainer = document.querySelector("#projects");
+const line = document.querySelector(".endLine");
+const usedLine = document.querySelector(".usedLine");
+const dot = document.querySelector(".dot");
 
 window.onscroll = () => {
-    if (window.innerWidth > 1100) {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            navUl.classList = 'slide-out-blurred-right'
-            navbarButton.style.visibility = 'visible'
-        } else if (document.body.scrollTop < 50 || document.documentElement.scrollTop < 50) {
-            navUl.classList = 'focus-in-expand'
-            navbarButton.style.visibility = 'hidden'
-        }
-    }
-}
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    navbar.style.justifyContent = "space-between";
+    navLinks.forEach((link) => (link.className = "slide-out-left"));
+    // navLinks.forEach((link) => (link.style.display = "none"));
+    navButton.className = "slide-in-left";
+    navButton.style.display = "block";
+  } else if (
+    document.body.scrollTop < 50 ||
+    document.documentElement.scrollTop < 50
+  ) {
+    navbar.style.justifyContent = "space-evenly";
+    navLinks.forEach((link) => (link.className = "slide-in-left"));
+    // navLinks.forEach((link) => (link.style.display = "block"));
+    navButton.className = "slide-out-left";
+    navButton.style.display = "none";
+  }
+};
 
-navbarButton.onclick = () => {
-    if (navUl.classList == 'slide-out-blurred-right') {
-        navUl.style.display = "block"
-        navUl.classList = 'focus-in-expand'
-        navbarButton.style.display = 'hidden'
-    } else if (navUl.classList = 'focus-in-expand') {
-        navUl.classList = 'slide-out-blurred-right'
-    }
-}
+window.addEventListener("scroll", () => {
+  if (
+    document.body.scrollTop > window.innerHeight ||
+    document.documentElement.scrollTop > window.innerHeight
+  ) {
+    line.style.display = "block";
+  } else {
+    line.style.display = "none";
+  }
+});
 
-navUl.onclick = () => {
-    if (navUl.classList == 'slide-out-blurred-right') {
-        navUl.style.display = "block"
-        navUl.classList = 'focus-in-expand'
-        navbarButton.style.display = 'hidden'
-    } else if (navUl.classList = 'focus-in-expand') {
-        navUl.classList = 'slide-out-blurred-right'
-    }
-}
+navButton.addEventListener("click", () => {
+  navLinks.forEach((link) => (link.className = "slide-in-left"));
+  navButton.className = "slide-out-left";
+  navButton.style.display = "none";
+});
 
-projects.forEach(project => bottomSection[0].innerHTML += `<button>${project.name}</button>`)
-projectBox.onmouseout = () => clearInterval(interval);
-projectBox.onmouseleave = () => startInt()
-const startInt = () => interval = setInterval(projectsGenerator, 4000)
+window.addEventListener("scroll", () => {
+  if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+    dot.className = "dot slide-out-bottom";
+    usedLine.style.display = "none";
+    line.style.top = "unset";
+    line.style.bottom = "86px";
+  } else {
+    dot.className = "dot slide-in-bottom";
+    usedLine.style.display = "block";
+    line.style.top = "0px";
+    line.style.bottom = "unset";
+  }
+});
 
-const resetButtons = () => {
-    for (let i = 0; i < bottomSection[0].children.length; i++) {
-        bottomSection[0].children[i].removeAttribute("class")
-    }
-}
-
-const projectsGenerator = () => {
-    resetButtons()
-    bottomSection[0].children[index].setAttribute("class", "bottomButtonOn")
-    projectBox.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("${projects[index].urlImg}")`
-    projectsContainer.innerHTML = `
-            <article class="middleSection slit-in-vertical">
-                <h2 class="fade">${projects[index].name}</h2>
-                <p class="fade">${projects[index].description}</p>
-                ${projects[index].tags.map(tag => `<span title="${tag}">${tag}</span>`)}<br>
-                <a href="${projects[index].live}" target='_blank'><i
-                        class="fas fa-code"></i></a>
-                <a href="${projects[index].gitHub}" target='_blank'><i
-                        class="fab fa-github-alt"></i></a>
-                        ${Object.keys(projects[index]).includes("addictionalGitHub") ?
-            `<a href="${projects[index].addictionalGitHub}" target='_blank'><i
-                        class="fab fa-github-alt"></i></a>` : ""}
+projectsContainer.innerHTML += projects
+  .map((project) => {
+    return `
+            <article class="projectContainer">
+            <img src=${project.urlImg} alt=${project.name}>
+            <div>
+                <h2>${project.name}</h2>
+                <div class="iconsAndDescription">
+                <div class="icons">
+                  <a href="${project.live}" target='_blank'><i
+                  class="fas fa-code"></i></a>
+                          <a href="${project.gitHub}" target='_blank'><i
+                  class="fab fa-github-alt"></i></a>
+                  ${
+                    Object.keys(project).includes("addictionalGitHub")
+                      ? `<a href="${project.addictionalGitHub}" target='_blank'><i class="fab fa-node"></i></a>`
+                      : ""
+                  }
+                </div>
+                <div>
+                <p>${project.description}</p>
+                // ${project.tags
+                  .map((tag) => ` <span title="${tag}">${tag}</span> `)
+                  .join("")}
+                </div>
+                </div>
+                    </div>
             </article>
-        `
-    index < projects.length - 1 ? index++ : index = 0;
-}
-
-bottomSection[0].onclick = (e) => {
-    const projectNames = projects.map(project => project.name)
-    if (projectNames.indexOf(e.target.innerHTML) >= 0) {
-        resetButtons()
-        index = projectNames.indexOf(e.target.innerHTML)
-        projectsGenerator()
-    }
-}
-
-startInt()
-projectsGenerator()
-
+        `;
+  })
+  .join("");
