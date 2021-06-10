@@ -1,23 +1,5 @@
 const projects = [
   {
-    name: "Happy App",
-    urlImg: "./img/happy-app-frame.png",
-    description: `A Mental Health App monitoring happiness levels over time, built for a client over
-        4 weeks in a team of 12. <br> My collaboration on the project consisted on building some components and
-        working features among them; writing code to get and store datas.`,
-    tags: ["REACT", "SASS", "Firebase"],
-    live: "https://happy-app-86830.web.app/",
-    gitHub: "https://github.com/nology-tech/happy-app",
-  },
-  {
-    name: "Initial Fantasy",
-    urlImg: "./img/initial-fantasy-frame.png",
-    description: `I built this game having in mind the old fashioned turn based rpg games therefore I called it "Initial Fantasy" inspired from one of the greatest fantasy media franchise ever, Final Fantasy. <br> The game is fully built in vanilla JavaScript with a functional programming approach and styled in SASS.`,
-    tags: ["HTML", "SASS", "JavaScript"],
-    live: "http://initialfantasy.intravaiaezio.co.uk/",
-    gitHub: "https://github.com/Ezio2994/js-game",
-  },
-  {
     name: "The Sicilian Shop",
     urlImg: "./img/sicilian-shop-frame.png",
     description: `I've built this app to showcase my skills on react, The app is usable either if
@@ -30,6 +12,24 @@ const projects = [
     tags: ["REACT", "SASS", "Firebase"],
     live: "https://thesicilianshop.intravaiaezio.co.uk/",
     gitHub: "https://github.com/Ezio2994/react-shop",
+  },
+  // {
+  //   name: "Happy App",
+  //   urlImg: "./img/happy-app-frame.png",
+  //   description: `A Mental Health App monitoring happiness levels over time, built for a client over
+  //       4 weeks in a team of 12. <br> My collaboration on the project consisted on building some components and
+  //       working features among them; writing code to get and store datas.`,
+  //   tags: ["REACT", "SASS", "Firebase"],
+  //   live: "https://happy-app-86830.web.app/",
+  //   gitHub: "https://github.com/nology-tech/happy-app",
+  // },
+  {
+    name: "Initial Fantasy",
+    urlImg: "./img/initial-fantasy-frame.png",
+    description: `I built this game having in mind the old fashioned turn based rpg games therefore I called it "Initial Fantasy" inspired from one of the greatest fantasy media franchise ever, Final Fantasy. <br> The game is fully built in vanilla JavaScript with a functional programming approach and styled in SASS.`,
+    tags: ["HTML", "SASS", "JavaScript"],
+    live: "http://initialfantasy.intravaiaezio.co.uk/",
+    gitHub: "https://github.com/Ezio2994/js-game",
   },
   {
     name: "The VideoGames Api",
@@ -60,17 +60,17 @@ const projects = [
   //   live: "https://book-finder.intravaiaezio.co.uk/search",
   //   gitHub: "https://github.com/Ezio2994/angular-book-finder",
   // },
-  // {
-  //   name: "Music Quiz",
-  //   urlImg: "./img/music-quiz.jpg",
-  //   description: `I have created this interactive music quiz as I love music and have always liked
-  //       to be challenged in my music knowledges. <br> The game is both single and multiplayer, so you can
-  //       challenge your friends. <br> The game is fully built in vanilla JavaScript with a functional
-  //       programming approach and styled in SASS.`,
-  //   tags: ["HTML", "SASS", "JavaScript"],
-  //   live: "http://the-music-quiz.intravaiaezio.co.uk/",
-  //   gitHub: "https://github.com/Ezio2994/music-quiz",
-  // },
+  {
+    name: "Music Quiz",
+    urlImg: "./img/music-quiz-frame.png",
+    description: `I have created this interactive music quiz as I love music and have always liked
+        to be challenged in my music knowledges. <br> The game is both single and multiplayer, so you can
+        challenge your friends. <br> The game is fully built in vanilla JavaScript with a functional
+        programming approach and styled in SASS.`,
+    tags: ["HTML", "SASS", "JavaScript"],
+    live: "http://the-music-quiz.intravaiaezio.co.uk/",
+    gitHub: "https://github.com/Ezio2994/music-quiz",
+  },
   // {
   //   name: "The Hangman Game",
   //   urlImg: "./img/hangman.jpg",
