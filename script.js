@@ -67,9 +67,13 @@ projectsContainer.innerHTML += projects
                 <h2>${project.name}</h2>
                 <div class="iconsAndDescription">
                 <div class="icons">
-                  <a href="${project.live}" target='_blank'><i
-                  class="fas fa-code"></i></a>
-                          <a href="${project.gitHub}" target='_blank'><i
+                  ${
+                    project.live
+                      ? `<a href="${project.live}" target='_blank'><i
+                  class="fas fa-code"></i></a>`
+                      : ""
+                  }
+                  <a href="${project.gitHub}" target='_blank'><i
                   class="fab fa-github-alt"></i></a>
                   ${
                     Object.keys(project).includes("addictionalGitHub")

@@ -38,20 +38,20 @@ const projects = [
         is accessable for everybody but the datas can only be modify by me or whoever I give the private-key
         access. <br> I've also build a react app to instruct users on how to use this api end-points and 
         showcase the obtanable data.`,
-    tags: ["REACT", "node.js", "Firebase", "SASS"],
+    tags: ["REACT", "Firebase", "SASS", "node.js"],
     live: "https://the-videogame-api.intravaiaezio.co.uk/",
     gitHub: "https://github.com/Ezio2994/the-videogames-api-react",
     addictionalGitHub: "https://github.com/Ezio2994/videogames-api-node.js",
   },
 
-  {
-    name: "Expenses Tracker",
-    urlImg: "./img/expenses-tracker-frame.png",
-    description: `I built this web app with in mind to help users to save money, the user can input fixed and daily incomes/expenses which are summed with the amount desired to save every month and give the left over amount spendable. The user can also see how much has gained, spent and saved during the year from the report panel. <br> all data are stored on Cloud Firestore, and the graph is generated with Chart.js.`,
-    tags: ["HTML", "SASS", "JavaScript", "Firebase"],
-    live: "http://expenses-tracker.intravaiaezio.co.uk/",
-    gitHub: "https://github.com/Ezio2994/expenses-tracker",
-  },
+  // {
+  //   name: "Expenses Tracker",
+  //   urlImg: "./img/expenses-tracker-frame.png",
+  //   description: `I built this web app with in mind to help users to save money, the user can input fixed and daily incomes/expenses which are summed with the amount desired to save every month and give the left over amount spendable. The user can also see how much has gained, spent and saved during the year from the report panel. <br> all data are stored on Cloud Firestore, and the graph is generated with Chart.js.`,
+  //   tags: ["HTML", "SASS", "JavaScript", "Firebase"],
+  //   live: "http://expenses-tracker.intravaiaezio.co.uk/",
+  //   gitHub: "https://github.com/Ezio2994/expenses-tracker",
+  // },
   // {
   //   name: "Book Finder",
   //   urlImg: "./img/book-BG.jpg",
@@ -64,12 +64,20 @@ const projects = [
     name: "Music Quiz",
     urlImg: "./img/music-quiz-frame.png",
     description: `I have created this interactive music quiz as I love music and have always liked
-        to be challenged in my music knowledges. <br> The game is both single and multiplayer, so you can
+        to be challenged in my music knowledge. <br> The game is both single and multiplayer, so you can
         challenge your friends. <br> The game is fully built in vanilla JavaScript with a functional
         programming approach and styled in SASS.`,
     tags: ["HTML", "SASS", "JavaScript"],
     live: "http://the-music-quiz.intravaiaezio.co.uk/",
     gitHub: "https://github.com/Ezio2994/music-quiz",
+  },
+  {
+    name: "My Python Scripts",
+    urlImg: "./img/python.png",
+    description:
+      "A collection of all my python scripts, you can find an explanation of what each of them do in the readme in the repository",
+    tags: ["python", "python modules"],
+    gitHub: "https://github.com/Ezio2994/my-python-scripts",
   },
   // {
   //   name: "The Hangman Game",
