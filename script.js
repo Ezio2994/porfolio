@@ -7,6 +7,9 @@ const projectsContainer = document.querySelector("#projects");
 const line = document.querySelector(".endLine");
 const usedLine = document.querySelector(".usedLine");
 const dot = document.querySelector(".dot");
+const year = document.getElementById("year");
+
+year.innerText = new Date().getFullYear().toString();
 
 window.onscroll = () => {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
